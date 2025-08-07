@@ -10,30 +10,45 @@ body {
   padding: 0;
 }
 
+h1{
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3rem
+}
+
 p{
   font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 1rem;
+
+}
+
+p:last-child{
+  margin-bottom: 0;
 }
 
 main{
   background-color: hsl(0deg, 0%, 40%);
   border-top: 8px solid hsl(0deg, 0%, 60%);
+  padding: 64px 0;
 }
 
 .max-width-wrapper{
   max-width: 800px;
-  padding: 64px 0;
-
-
 
   @media (min-width: 768px) {
     margin: 0 auto;
-    padding: 64px 32px;
+    padding: 0 32px;
 
   }
 }
 
 .intro-chunk{
-  padding: 16px;
+  padding: 96px 16px 64px;
+  max-width: 415px;
 }
 
 .intro-chunk strong{
@@ -48,21 +63,23 @@ main{
   background-color: hsl(0deg, 50%, 100%);
   border-bottom: 8px solid hsl(0deg, 0%, 60%);
   padding: 8px 16px 16px 16px;
-
 }
 
 .indented-heading{
-  background-color: hsl(45deg, 100%, 60%);
-  border-bottom: 8px solid hsl(45deg, 100%, 40%);
-  padding: 8px 16px;
-  margin: 0 0 0 -16px;
-  max-width: 70%;
-  min-width: 320px;
-
   @media (min-width: 768px) {
     margin: 0 0 0 -32px;
     padding: 8px 32px;
     
   }
+
+  background-color: hsl(45deg, 100%, 60%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+  padding: 8px 16px;
+  margin: 0 0 0 -16px;
+  margin-bottom: 1rem;
+  max-width: 70%;
+  min-width: 280px;
+
+
 
 }
